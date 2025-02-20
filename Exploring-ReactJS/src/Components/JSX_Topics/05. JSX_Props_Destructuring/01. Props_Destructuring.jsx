@@ -71,6 +71,7 @@ const PropsDestructuringExample = () => {
 
 				{/* <UserData /> */}
 				<ProductsComponentUI />
+				
 			</div>
 		</div>
 	);
