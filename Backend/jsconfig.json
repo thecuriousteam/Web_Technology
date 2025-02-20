@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "jsx": "react"
+  },
+  "exclude": ["node_modules"]
+}
+// {
+//   "compilerOptions": {
+//     "target": "ES6",
+//     "module": "commonjs",
+//     "jsx": "react",
+//     "allowSyntheticDefaultImports": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "*": ["node_modules/*"],
+//       "@/*": ["src/*"]  // Example of aliasing, adjust as needed
+//     },
+//     "checkJs": true,  // Enables type checking for better Intellisense
+//     "noEmit": true,    // Prevents the compiler from emitting output (useful if not using TypeScript)
+//     "strict": true     // Enables strict type-checking options
+//   },
+//   "include": ["src/**/*", "index.js"],  // Adjust paths based on your project structure
+//   "exclude": ["node_modules", "**/node_modules/*", "dist", "build"]  // Exclude build directories
+// }
