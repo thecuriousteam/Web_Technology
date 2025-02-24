@@ -1,0 +1,41 @@
+{
+  "fullName": "John Doe",
+  "userName": "johndoe_51bq",
+  "email": "johndoe@example.com",
+  "profilePictureURL": "https://example.com/profile.jpg",
+  "description": "Experienced Software Engineer with a strong background in full-stack development, cloud computing, and system design. Passionate about mentoring, writing scalable code, and driving innovation.",
+  "designation": "Senior Software Engineer (SDE III)",
+  "experience": "8+ years in software development, specializing in web applications, microservices, and distributed systems.",
+  "skills": [
+    "React.js",
+    "SQL",
+    "Node.js",
+    "Docker",
+    "Java",
+    "Microservices",
+    "Cloud Computing (AWS, GCP)",
+    "System Design",
+    "Kubernetes",
+    "DevOps"
+  ],
+  "specialization": [
+    "Scalable Web Applications",
+    "Microservices Architecture",
+    "DevOps & CI/CD",
+    "Database Optimization",
+    "Cloud-Native Development"
+  ],
+  "offerings": [
+    "2 Mentorship Sessions Per Week",
+    "3 Days Per Week Availability",
+    "Up to 3 Job Referrals Per Month",
+    "Resume & LinkedIn Profile Review",
+    "Mock Interviews & Career Guidance"
+  ],
+  "hourlyPrice": 120,
+  "location": "San Francisco, CA, USA",
+  "nextSlotDate": "2024-09-30T10:00:00Z",
+  "linkedin": "https://linkedin.com/in/johndoe",
+  "github": "https://github.com/johndoe",
+  "portfolio": "https://johndoe.dev"
+}
