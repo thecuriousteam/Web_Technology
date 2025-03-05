@@ -1,6 +1,36 @@
+// {
+//   "code-runner.runInTerminal": true,
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   "editor.formatOnSave": true,
+//   "editor.tabSize": 2
+// }
+
 {
   "code-runner.runInTerminal": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "css.lint.unknownAtRules": "ignore",
+
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "javascriptreact": "javascript",
+    "typescript": "typescript",
+    "typescriptreact": "typescript"
+  },
+
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+  "tailwindCSS.experimental.classSorting": true,
+  "tailwindCSS.enabled": true
+
+  // "emmet.syntaxProfiles": {
+  //   "javascript": "jsx"
+  // }
 }

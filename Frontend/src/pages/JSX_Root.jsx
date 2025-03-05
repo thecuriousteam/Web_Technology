@@ -4,6 +4,7 @@ import Profile from "../component/JSX_Projects/03. FindMentorUi";
 import JSXAsync_Await from "../component/JSX_Concepts/01. JSX_Async_Await";
 import JSX_Promises_Example from "../component/JSX_Concepts/02. JSX_Promise";
 import HandleInput_LocalStorage from "../component/JSX_Concepts/03. JSX_HandleInput";
+import ResponsiveNavbar from "../component/JSX_Projects/03. Navbar";
 
 export const JSX_Root = () => {
   return (
@@ -16,10 +17,15 @@ export const JSX_Root = () => {
     // </div>
 
     // Concepts
-    <div>
-      {/* <JSXAsync_Await /> */}
-      {/* <JSX_Promises_Example /> */}
-      <HandleInput_LocalStorage />
-    </div>
+    // <div>
+    //   {/* <JSXAsync_Await /> */}
+    //   {/* <JSX_Promises_Example /> */}
+    //   {/* <HandleInput_LocalStorage /> */}
+    // </div>
+
+    // Project
+    <>
+      <ResponsiveNavbar />
+    </>
   );
 };
