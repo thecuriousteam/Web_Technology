@@ -10,6 +10,11 @@ import { CartProvider } from "./Example_3/Cart_Provider";
 import { ProductList } from "./Example_3/Product_List";
 import ProductCart from "./Example_3/Product_Cart";
 
+import { MentorProvider } from "./Example_4/MentorProvider";
+import MentorList from "./Example_4/MentorList";
+import SearchFilterMentor from "./Example_4/SearchFilterMentor";
+import AddMentor from "./Example_4/AddMentor";
+
 export const JSX_useContext = () => {
   return (
     <div>
@@ -23,10 +28,17 @@ export const JSX_useContext = () => {
         <UserProfile />
       </AuthProvider> */}
 
-      <CartProvider>
+      {/* <CartProvider>
         <ProductList />
         <ProductCart />
-      </CartProvider>
+      </CartProvider> */}
+
+      <MentorProvider>
+        <SearchFilterMentor />
+        <MentorList />
+
+        <AddMentor />
+      </MentorProvider>
     </div>
   );
 };
