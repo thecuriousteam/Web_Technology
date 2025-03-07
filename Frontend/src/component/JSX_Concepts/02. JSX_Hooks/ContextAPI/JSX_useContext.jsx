@@ -3,14 +3,30 @@
 import React from "react";
 import { BioProvider } from ".";
 import Profile from "./home";
+import { AuthProvider } from "./Example_2/Auth_Provider";
+import Login from "./Example_2/Login";
+import UserProfile from "./Example_2/Profile_Component";
+import { CartProvider } from "./Example_3/Cart_Provider";
+import { ProductList } from "./Example_3/Product_List";
+import ProductCart from "./Example_3/Product_Cart";
 
 export const JSX_useContext = () => {
   return (
     <div>
-      <BioProvider>
-        {/* Wrap all the consuming components */}
-        <Profile />
-      </BioProvider>
+      {/* <BioProvider> */}
+      {/* Wrap all the consuming components */}
+      {/* <Profile /> */}
+      {/* </BioProvider> */}
+
+      {/* <AuthProvider>
+        <Login />
+        <UserProfile />
+      </AuthProvider> */}
+
+      <CartProvider>
+        <ProductList />
+        <ProductCart />
+      </CartProvider>
     </div>
   );
 };
