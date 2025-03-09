@@ -5,10 +5,14 @@ import { MentorProvider } from "./Example_4/MentorProvider";
 import MentorList from "./Example_4/MentorList";
 import SearchFilterMentor from "./Example_4/SearchFilterMentor";
 import AddMentor from "./Example_4/AddMentor";
+import { TodoProvider } from "./Example_5/TodoProvider";
+import TodoFilter from "./Example_5/TodoFilter";
+import AddTodoComponent from "./Example_5/AddTodo";
+import TodoList from "./Example_5/TodoList";
 
 export const JSX_useContext = () => {
   return (
-    <div>
+    <>
       {/* <BioProvider> */}
       {/* Wrap all the consuming components */}
       {/* <Profile /> */}
@@ -23,13 +27,18 @@ export const JSX_useContext = () => {
         <ProductList />
         <ProductCart />
       </CartProvider> */}
-
+      {/* 
       <MentorProvider>
         <SearchFilterMentor />
         <MentorList />
-
         <AddMentor />
-      </MentorProvider>
-    </div>
+      </MentorProvider> */}
+
+      <TodoProvider>
+        <TodoFilter />
+        <AddTodoComponent />
+        <TodoList />
+      </TodoProvider>
+    </>
   );
 };
