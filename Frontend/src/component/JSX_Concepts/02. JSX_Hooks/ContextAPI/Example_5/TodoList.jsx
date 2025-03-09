@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { TodoContext } from "./TodoContext";
+import TodoContext from "./TodoContext";
 import { FiList, FiTrash } from "react-icons/fi";
 import todo from "../../../../../assets/todo.png";
 import AddTodoComponent from "./AddTodo";

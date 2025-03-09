@@ -9,6 +9,10 @@ import { TodoProvider } from "./Example_5/TodoProvider";
 import TodoFilter from "./Example_5/TodoFilter";
 import AddTodoComponent from "./Example_5/AddTodo";
 import TodoList from "./Example_5/TodoList";
+import { EmployeeProvider } from "./Example_6/ExployeeProvider";
+import EmployeeAdd from "./Example_6/EmployeeAdd";
+import EmployeeList from "./Example_6/EmployeeList";
+import EmployeeFilter from "./Example_6/EmployeeFilter";
 
 export const JSX_useContext = () => {
   return (
@@ -34,11 +38,16 @@ export const JSX_useContext = () => {
         <AddMentor />
       </MentorProvider> */}
 
-      <TodoProvider>
+      {/* <TodoProvider>
         <TodoFilter />
         <AddTodoComponent />
         <TodoList />
-      </TodoProvider>
+      </TodoProvider> */}
+      <EmployeeProvider>
+        <EmployeeFilter />
+        <EmployeeAdd />
+        <EmployeeList />
+      </EmployeeProvider>
     </>
   );
 };
