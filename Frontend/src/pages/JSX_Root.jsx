@@ -7,6 +7,7 @@ import UserApp from "../component/JSX_Concepts/04. React-Router-DOM/03. RROM-use
 import TodoApp from "../component/JSX_Concepts/04. React-Router-DOM/04. RRDOM-Todo/Todo-App";
 import DynamicRoutingExample from "../component/JSX_Concepts/04. React-Router-DOM/05. Dynamic-Routing/01. Dynamic-Routing-Params";
 import { ProductApp } from "../component/JSX_Concepts/04. React-Router-DOM/05. Dynamic-Routing/02. RealWorldExample-1";
+import { BlogPostApp } from "../component/JSX_Concepts/04. React-Router-DOM/05. Dynamic-Routing/02. RealWorldExample-2";
 
 export const JSX_Root = () => {
   return (
@@ -30,9 +31,9 @@ export const JSX_Root = () => {
       {/* <JSX_RouterHome_1 /> */}
       {/* <UserApp /> */}
       {/* <TodoApp /> */}
-      {/* <DynamicRoutingExample />
-       */}
-      <ProductApp />
+      {/* <DynamicRoutingExample /> */}
+      {/* <ProductApp /> */}
+      <BlogPostApp />
     </div>
 
     // Project
