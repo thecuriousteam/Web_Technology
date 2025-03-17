@@ -8,11 +8,10 @@ import NotFoundPage from "./404Page";
 const UserApp = () => {
   return (
     <div>
-      {/* router */}
       {/* provider */}
       <UserProvider>
         {/* all consumers needs to be added here */}
-
+        {/* router */}
         <Router>
           <div className="min-h-screen bg-gray-100 p-5">
             <nav className="flex gap-5 bg-white p-4 shadow-md rounded-lg">
