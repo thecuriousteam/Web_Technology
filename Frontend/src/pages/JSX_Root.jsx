@@ -8,6 +8,7 @@ import TodoApp from "../component/JSX_Concepts/04. React-Router-DOM/04. RRDOM-To
 import DynamicRoutingExample from "../component/JSX_Concepts/04. React-Router-DOM/05. Dynamic-Routing/01. Dynamic-Routing-Params";
 import { ProductApp } from "../component/JSX_Concepts/04. React-Router-DOM/05. Dynamic-Routing/02. RealWorldExample-1";
 import { BlogPostApp } from "../component/JSX_Concepts/04. React-Router-DOM/05. Dynamic-Routing/02. RealWorldExample-2";
+import UseReducerExample from "../component/JSX_Concepts/02. JSX_Hooks/UseReducer/01. useReducerExample";
 
 export const JSX_Root = () => {
   return (
@@ -33,7 +34,8 @@ export const JSX_Root = () => {
       {/* <TodoApp /> */}
       {/* <DynamicRoutingExample /> */}
       {/* <ProductApp /> */}
-      <BlogPostApp />
+      {/* <BlogPostApp /> */}
+      <UseReducerExample />
     </div>
 
     // Project
