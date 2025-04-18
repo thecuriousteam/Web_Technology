@@ -9,4 +9,18 @@ module.exports = (app) => {
   app.get("/users", (req, res) => {
     res.json(users);
   });
+
+  // get userById
+  app.get("/users/:id", (req, res) => {
+    const userId = parseInt(req.params.id);
+
+    const userData = users.find((u) => u.id === userId);
+    console.log(">>> user data: ", userData);
+
+    if (userData) {
+      res.status(200).send(userData);
+    } else {
+      res.status(404).send("User Not Found");
+    }
+  });
 };
