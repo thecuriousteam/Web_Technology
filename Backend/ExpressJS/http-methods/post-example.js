@@ -9,17 +9,12 @@ module.exports = (app) => {
   // adding new user
   // POST route to add a new user
   app.post("/users", (req, res) => {
+    // we will add user through API
     const newUser = req.body;
-    console.log(">>>", newUser);
-    // Check if the required fields are present
-    if (!newUser || !newUser.name || !newUser.email) {
-      return res.status(400).json({ error: "Name and email are required." });
-    }
-
-    // Assign a new ID based on the current users array length
     newUser.id = users.length + 1;
 
-    users.push(newUser); // Add the new user to the users array
-    res.status(201).json(newUser); // Send the newly created user as the response
+    // push the new user
+    users.push(newUser);
+    res.status(201).json(newUser);
   });
 };

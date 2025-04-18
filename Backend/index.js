@@ -27,7 +27,9 @@ app.get("/", (req, res) => {
 
 require("./ExpressJS/http-methods/get-example")(app);
 require("./ExpressJS/http-methods/post-example")(app);
-
+require("./ExpressJS/http-methods/put-example")(app);
+require("./ExpressJS/http-methods/patch-example")(app);
+require("./ExpressJS/http-methods/delete-example")(app);
 // Server configuration
 const PORT = 5001;
 app.listen(PORT, () => {
