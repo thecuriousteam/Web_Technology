@@ -1,5 +1,12 @@
 // Import express
 const express = require("express");
+const dotenv = require("dotenv");
+const DBConnection = require("./ExpressJS/MongoDB_CRUD/config/db"); // Import the DB connection file
+
+dotenv.config(); // Load environment variables from .env file
+DBConnection();
+
+// importing db connection file
 
 // Create the Express application
 const app = express();
