@@ -11,4 +11,10 @@ const DBConnection = async () => {
   }
 };
 
+// connection can also be done through promise
+// const db = mongoose
+//   .connect(process.env.MONGO_URI)
+//   .then(() => console.log("Mongo Db Connected Successfully"))
+//   .catch((err) => console.log(err));
+
 module.exports = DBConnection;
