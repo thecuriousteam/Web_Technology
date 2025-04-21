@@ -1,12 +1,22 @@
 // Import express
 const express = require("express");
 const dotenv = require("dotenv");
-const DBConnection = require("./ExpressJS/MongoDB_CRUD/config/db"); // Import the DB connection file
-const userRoutes = require("./ExpressJS/MongoDB_CRUD/routes/userRoutes");
+
+// Project - 1
+// const DBConnection = require("./ExpressJS/MongoDB_CRUD/config/db"); // Import the DB connection file
+// const userRoutes = require("./ExpressJS/MongoDB_CRUD/routes/userRoutes");
+// dotenv.config(); // Load environment variables from .env file
+// DBConnection();
+
+// Project - 2
+const authRoutes = require("./ExpressJS/MongoDB_AuthFlow/routes/authRoutes"); // Import the auth routes
+const userRoutes = require("./ExpressJS/MongoDB_AuthFlow/routes/userRoutes"); // Import the user routes
+
+const DBConnection = require("./ExpressJS/MongoDB_AuthFlow/config/db");
 dotenv.config(); // Load environment variables from .env file
-DBConnection();
 
 // importing db connection file
+DBConnection();
 
 // Create the Express application
 const app = express();
@@ -23,7 +33,10 @@ app.get("/", (req, res) => {
   res.send("Hello Express!"); // Send response for the root route
 });
 
-app.use("/api/v1/user", userRoutes);
+// app.use("/api/v1/user", userRoutes);
+
+app.use("/api/v1/auth", authRoutes); // Use the auth routes
+app.use("/api/v1/user", userRoutes); // Use the user routes
 
 // Server configuration
 const PORT = 5001;
